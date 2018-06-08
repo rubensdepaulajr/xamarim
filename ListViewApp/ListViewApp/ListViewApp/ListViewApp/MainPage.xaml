@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ListViewApp.MainPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Total" Clicked="Total_OnClicked"/>
+        <ToolbarItem Text="Pessoa" Clicked="Pessoa_OnClicked"/>
+
+        <ToolbarItem Order="Primary" Text="Ligar" Priority="0" Command="{Binding LigarCommand}" />
+        <ToolbarItem Order="Primary" Text="Item 2" Priority="1" />
+
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarim Forms!"
+                   VerticalOptions="CenterAndExpand" 
+                   HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+    
